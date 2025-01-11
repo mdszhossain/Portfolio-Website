@@ -56,7 +56,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 50px 200px;
+    padding: 50px 100px;
     background-color: var(--hero-header);
 }
 
@@ -88,5 +88,65 @@
     .hire-button {
         font-size: 1rem;
         padding: 12px 28px;
+    }
+}
+
+/* Small Screen */
+@media (min-width: 480px) and (max-width: 767px) {
+    /* Header Style */
+    .nav-bar {
+        /* flex-direction: column; */
+        padding: 30px 20px;
+        align-items: center;
+    }
+    .nav-routing {
+        /* flex-direction: column; */
+        gap: 20px;
+    }
+    .routing {
+        /* flex-direction: column; */
+        align-items: center;
+        grid-gap: 20px;
+    }
+    .logo {
+        font-size: 2rem;
+    }
+    .routing a, .hire-button {
+        font-size: 1rem;
+    }
+    .hire-button {
+        padding: 12px 28px;
+    }
+}
+
+/* Medium Screen */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .nav-bar {
+        padding: 50px 50px;
+    }
+    .logo {
+        font-size: 2.5rem;
+    }
+    .routing a, .hire-button {
+        font-size: 1rem;
+    }
+    .hire-button {
+        padding: 12px 28px;
+    }
+}
+
+/* Large Screen */
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .nav-bar {
+        padding: 50px 100px;
+    }
+    .logo {
+        font-size: 2.5rem;
+    }
+    .routing a, .hire-button {
+        font-size: 1rem;
+    }
+    .hire-button {
+        padding: 15px 30px;
     }
 }
