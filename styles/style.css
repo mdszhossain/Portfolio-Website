@@ -1,0 +1,92 @@
+/* Adding font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Universal Styling */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Open Sans";
+}
+:root{
+    --dark-black: #181818;
+    --light-black: #474747;
+    --dark-orange: #FD6E0A;
+    --white-color: #FFFFFF;
+    --hero-header: #FFF8F3;
+}
+
+/* Main Styling */
+/* Header Style */
+.logo {
+    font-size: 2.813rem;
+    font-weight: 800;
+    color: var(--dark-black);
+}
+.logo-contrast {
+    color: var(--dark-orange);
+}
+.routing li {
+    list-style-type: none;
+}
+.routing a {
+    text-decoration: none;
+    color: var(--light-black);
+    font-weight: 400;
+}
+.hire-button {
+    background-color: var(--dark-orange);
+    border: 0px;
+    border-radius: 5px;
+    padding: 18px 35px;
+    color: var(--white-color);
+}
+.routing a, .hire-button {
+    font-size: 1.25rem;
+}
+.nav-routing {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.routing {
+    display: flex;
+    gap: 50px;
+}
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 200px;
+    background-color: var(--hero-header);
+}
+
+/* Extra Small Screen */
+@media (min-width: 320px) and (max-width: 479px) {
+    /* Header Styling */
+    .nav-bar {
+        flex-direction: column;
+        padding: 30px 0px;
+        height: 240px;
+    }
+    .routing {
+        flex-direction: column;
+    }
+    .nav-routing {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .routing {
+        align-items: center;
+        gap: 20px;
+    }
+    .logo {
+        font-size: 2rem;
+    }
+    .routing a {
+        font-size: 1rem;
+    }
+    .hire-button {
+        font-size: 1rem;
+        padding: 12px 28px;
+    }
+}
