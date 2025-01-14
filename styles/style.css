@@ -114,6 +114,41 @@
     background-color: var(--hero-header);
 }
 
+/* About Section Style */
+.about-section {
+    max-width: 75%;
+    height: 500px;
+    background-color: var(--hero-header);
+    margin: 150px auto 150px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section-content {
+    text-align: center;
+}
+.about-info,.about-meta, .about-section-description {
+    color: var(--light-black);
+}
+.about-info {
+    font-weight: 700;
+}
+.about-details {
+    display: flex;
+    justify-content: center;
+    gap: 125px;
+}
+.about-section-description {
+    width: 60%;
+    margin: 35px auto 35px;
+}
+.about-me {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
 /* Extra Small Screen */
 @media (min-width: 320px) and (max-width: 479px) {
     /* Header Styling */
@@ -171,6 +206,20 @@
     .orange-button, .hover-button {
         padding: 15px 10px;
     }
+
+    /* About Section Style */
+    .about-section {
+        max-width: 90%;
+        height: 630px;
+        margin: 80px auto 80px;
+    }
+    .about-details {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .about-section-description {
+        width: 85%;
+    }
 }
 
 /* Small Screen */
@@ -226,6 +275,20 @@
     .orange-button, .hover-button {
         padding: 15px 10px;
     }
+
+    /* About Section Style */
+    .about-section {
+        max-width: 85%;
+        height: 450px;
+        margin: 100px auto 100px;
+    }
+    .about-details {
+        gap: 35px;
+        flex-wrap: wrap;
+    }
+    .about-section-description {
+        width: 90%;
+    }
 }
 
 /* Medium Screen */
@@ -273,6 +336,19 @@
     .orange-button {
         margin-left: 0px;
     }
+
+    /* About Section Style */
+    .about-section {
+        max-width: 90%;
+        height: 450px;
+    }
+    .about-details {
+        flex-wrap: wrap;
+        gap: 45px;
+    }
+    .about-section-description {
+        width: 85%;
+    }
 }
 
 /* Large Screen */
@@ -312,6 +388,18 @@
     }
     .orange-button, .hover-button {
         font-size: 1rem;
+    }
+
+    /* About Section Style */
+    .about-section {
+        max-width: 80%;
+        height: 450px;
+    }
+    .about-section-description {
+        width: 85%;
+    }
+    .about-details {
+        gap: 50px;
     }
     
 }
