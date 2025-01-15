@@ -95,6 +95,7 @@
 .hero-description {
     color: var(--light-black);
     margin: 15px 0px 15px 0px;
+    line-height: 1.875rem;
 }
 .orange-button {
     background-color: var(--dark-orange);
@@ -143,10 +144,60 @@
 .about-section-description {
     width: 60%;
     margin: 35px auto 35px;
+    line-height: 1.875rem;
 }
 .about-me {
     font-size: 2rem;
     font-weight: 700;
+}
+
+/* Technology Section Style */
+.what-do {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.main-text-description {
+    color: var(--light-black);
+    width: 60%;
+    margin: 35px auto 35px;
+    line-height: 1.875rem;
+}
+.what-do, .main-text-description {
+    text-align: center;
+}
+.main-text-part {
+    max-width: 75%;
+    margin: 50px auto 50px;
+}
+
+.tech-detail-part {
+    max-width: 75%;
+    margin: 50px auto 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.tech-details-container {
+    width: 280px;
+    height: 360px;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+}
+.tech-details {
+    width: 80%;
+}
+.detail-heading {
+    margin: 20px 0px;
+    color: var(--dark-black);
+    font-size: 1.25rem;
+}
+.detail-description {
+    line-height: 1.875rem;
 }
 
 /* Extra Small Screen */
@@ -210,7 +261,7 @@
     /* About Section Style */
     .about-section {
         max-width: 90%;
-        height: 630px;
+        height: 720px;
         margin: 80px auto 80px;
     }
     .about-details {
@@ -219,6 +270,23 @@
     }
     .about-section-description {
         width: 85%;
+    }
+
+    /* Technology Section Style */
+    .main-text-part {
+        margin: 50px auto;
+    }
+    .main-text-description {
+        width: 90%;
+    }
+    .tech-detail-part {
+        flex-direction: column;
+        max-width: 90%; 
+        margin: 60px auto;
+    }
+    .tech-details-container {
+        width: 95%;
+        margin: 10px auto;
     }
 }
 
@@ -279,7 +347,7 @@
     /* About Section Style */
     .about-section {
         max-width: 85%;
-        height: 450px;
+        height: 500px;
         margin: 100px auto 100px;
     }
     .about-details {
@@ -288,6 +356,23 @@
     }
     .about-section-description {
         width: 90%;
+    }
+
+    /* Technology Section Style */
+    .main-text-part {
+        margin: 50px auto;
+    }
+    .main-text-description {
+        width: 90%;
+    }
+    .tech-detail-part {
+        flex-direction: column;
+        max-width: 90%; 
+        margin: 60px auto;
+    }
+    .tech-details-container {
+        width: 95%;
+        margin: 10px auto;
     }
 }
 
@@ -349,6 +434,20 @@
     .about-section-description {
         width: 85%;
     }
+
+    /* Technology Section Style */
+    .main-text-description {
+        width: 90%;
+    }
+    .main-text-part {
+        margin: 50px auto;
+    }
+    .tech-detail-part {
+        gap: 40px;
+        max-width: 85%;
+        margin: 50px auto;
+        flex-wrap: wrap;
+    }
 }
 
 /* Large Screen */
@@ -400,6 +499,20 @@
     }
     .about-details {
         gap: 50px;
+    }
+
+    /* Technology Section Style */
+    .main-text-part {
+        margin: 50px auto;
+        max-width: 85%;
+    }
+    .main-text-description {
+        width: 85%;
+    }
+    .tech-detail-part {
+        max-width: 85%;
+        margin: 50px auto;
+        gap: 40px;
     }
     
 }
