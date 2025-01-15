@@ -176,7 +176,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
 }
 .tech-details-container {
     width: 280px;
@@ -199,6 +199,50 @@
 .detail-description {
     line-height: 1.875rem;
 }
+
+/* Resume Summary Section */
+.resume-summary-container {
+    max-width: 75%;
+    margin: 50px auto 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.education-experience-part {
+    width: 40%;
+}
+.resume-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--dark-black);
+    text-align: center;
+}
+.ed-ex-heading {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--dark-black);
+}
+.deg-heading {
+    font-size: 1.563rem;
+    color: var(--dark-black);
+    font-weight: 700;
+}
+.deg-tagline {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--light-black);
+    margin: 10px 0px 20px 0px;
+}
+.deg-description {
+    color: var(--light-black);
+    line-height: 1.75rem;
+}
+.degree-container {
+    margin: 30px 0px;
+}
+.resume-summary {
+    margin-top: 100px;
+}
+
 
 /* Extra Small Screen */
 @media (min-width: 320px) and (max-width: 479px) {
@@ -288,6 +332,18 @@
         width: 95%;
         margin: 10px auto;
     }
+
+    /* Resume Summary Section */
+    .resume-summary-container {
+        max-width: 90%;
+        flex-direction: column;
+    }
+    .education-experience-part {
+        width: 95%;
+    }
+    .resume-summary {
+        text-align: center;
+    }
 }
 
 /* Small Screen */
@@ -374,6 +430,18 @@
         width: 95%;
         margin: 10px auto;
     }
+
+    /* Resume Summary Section */
+    .resume-summary-container {
+        max-width: 90%;
+        flex-direction: column;
+    }
+    .education-experience-part {
+        width: 95%;
+    }
+    .resume-summary {
+        text-align: center;
+    }
 }
 
 /* Medium Screen */
@@ -447,6 +515,23 @@
         max-width: 85%;
         margin: 50px auto;
         flex-wrap: wrap;
+    }
+
+    /* Resume Summary Section */
+    .resume-summary-container {
+        max-width: 85%;
+    }
+    .education-experience-part {
+        width: 48%;
+    }
+    .ed-ex-heading {
+        font-size: 1.75rem;
+    }
+    .deg-heading {
+        font-size: 1.5rem;
+    }
+    .deg-tagline {
+        font-size: 1.25rem;
     }
 }
 
